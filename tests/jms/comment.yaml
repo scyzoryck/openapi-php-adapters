@@ -1,0 +1,14 @@
+components:
+  schemas:
+    Comment:
+      type: object
+      properties:
+        author:
+          type: Author
+        text:
+          type: string
+    Author:
+      type: object
+      properties:
+        full_name:
+          type: string

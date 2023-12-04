@@ -1,0 +1,9 @@
+components:
+  schemas:
+    AuthorReadOnly:
+      type: object
+      properties:
+        id:
+          readOnly: true
+        full_name:
+          type: string

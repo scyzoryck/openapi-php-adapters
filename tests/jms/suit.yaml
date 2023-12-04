@@ -1,0 +1,9 @@
+components:
+  schemas:
+    Suit:
+      enum:
+        - Hearts
+        - Diamonds
+        - Clubs
+        - Spades
+      type: string

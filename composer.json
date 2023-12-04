@@ -1,0 +1,32 @@
+{
+    "name": "scyzoryck/openapi-adapters",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": "8.2.*",
+        "cebe/php-openapi": "^1.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.3",
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.25",
+        "jms/serializer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Scyzoryck\\OpenApiAdapters\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Scyzoryck\\OpenApiAdapters\\Tests\\": "tests/",
+            "JMS\\Serializer\\Tests\\Fixtures\\": "vendor/jms/serializer/tests/Fixtures"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marcin Czarnecki",
+            "email": "scyzoryck@gmail.com"
+        }
+    ]
+}

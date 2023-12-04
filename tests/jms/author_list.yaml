@@ -1,0 +1,14 @@
+components:
+  schemas:
+    AuthorList:
+      type: object
+      properties:
+        authors:
+          type: array
+          items:
+            $ref: '#/components/schemas/Author'
+    Author:
+      type: object
+      properties:
+        full_name:
+          type: string

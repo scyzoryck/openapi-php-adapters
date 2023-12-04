@@ -1,0 +1,20 @@
+components:
+  schemas:
+    CircularReferenceParent:
+      type: object
+      properties:
+        collection:
+          type: array
+          items:
+            $ref: '#/components/schemas/CircularReferenceChild'
+        another_collection:
+          type: array
+          items:
+            $ref: '#/components/schemas/CircularReferenceChild'
+    CircularReferenceChild:
+      type: object
+      properties:
+        name:
+          type: string
+        parent:
+          type: CircularReferenceParent
